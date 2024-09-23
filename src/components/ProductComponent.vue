@@ -32,11 +32,12 @@
         </div>
       </div>
       <div v-else class="product-unavail">
-        <img src="/sad-face.svg" alt="sad-face" />
-        <p>Product unavailable to show</p>
-        <button class="button-secondary" @click="nextProduct">
-          Next Product
-        </button>
+        <div class="unavail-detail">
+          <p>This product is unavailable to show</p>
+          <button class="button-secondary" @click="nextProduct">
+            Next Product
+          </button>
+        </div>
       </div>
     </div>
   </section>

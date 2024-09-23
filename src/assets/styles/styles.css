@@ -27,6 +27,10 @@ body {
   right: 0px;
   min-height: 60vh;
   width: 100%;
+  background-image: url("../bg-pattern.svg");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: 50%;
 }
 img {
   max-width: 200px;
@@ -103,10 +107,6 @@ img {
   margin-top: 10px;
   font-weight: 600;
 }
-.product-unavail {
-  text-align: center;
-  position: relative;
-}
 
 .button-group {
   margin-top: auto;
@@ -142,16 +142,6 @@ button {
   cursor: pointer;
 }
 
-.product-unavail .button-secondary {
-  border: 3px solid;
-  text-align: center;
-  padding: 10px 0px;
-  border-radius: 4px;
-  width: 100%;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .spinner {
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-left-color: #000;
@@ -160,6 +150,40 @@ button {
   height: 50px;
   animation: spin 8s linear infinite;
   margin: 20px auto;
+}
+/* Unavailable-Section  */
+.product-unavail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 1024px;
+  min-height: 500px;
+  background-image: url("../sad-face.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 150%;
+}
+
+.product-unavail .button-secondary {
+  border: 3px solid;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto;
+  width: 100%;
+}
+.unavail-detail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Men and Women Section  */
@@ -210,6 +234,18 @@ button {
   border-color: var(--men-card);
   background-color: var(--white);
   color: var(--men-card);
+  font-weight: bold;
+  border-style: solid;
+  border-width: medium;
+}
+.women-section .button-primary {
+  background-color: var(--women-card);
+  color: var(--white);
+}
+.women-section .button-secondary {
+  border-color: var(--women-card);
+  background-color: var(--white);
+  color: var(--women-card);
   font-weight: bold;
   border-style: solid;
   border-width: medium;
