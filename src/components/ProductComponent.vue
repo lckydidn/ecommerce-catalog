@@ -19,9 +19,9 @@
               ></span>
             </span>
           </div>
-          <hr class="divider" />
+          <hr />
           <p class="product-description">{{ product.description }}</p>
-          <hr class="divider" />
+          <hr />
           <p class="product-price">${{ product.price }}</p>
           <div class="button-group">
             <button class="button-primary">Buy Now</button>
@@ -61,6 +61,7 @@ const fetchProduct = async (index) => {
     if (categories.includes(data.category)) {
       product.value = data;
     } else {
+      product.value = null;
       nextProduct();
     }
   } catch (error) {
@@ -71,12 +72,12 @@ const fetchProduct = async (index) => {
 };
 
 const nextProduct = () => {
-  currentIndex.value += 1;
-  if (currentIndex.value > maxIndex) {
-    product.value = null;
+  if (currentIndex.value >= maxIndex) {
+    currentIndex.value = 1;
   } else {
-    fetchProduct(currentIndex.value);
+    currentIndex.value++;
   }
+  fetchProduct(currentIndex.value);
 };
 
 const sectionClass = computed(() => {
