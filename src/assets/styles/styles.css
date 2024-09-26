@@ -50,6 +50,8 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 1024px;
   min-height: 500px;
+  position: absolute;
+  top: 40%;
 }
 .card-image {
   margin-right: 64px;
@@ -167,6 +169,8 @@ button {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 150%;
+  position: absolute;
+  top: 40%;
 }
 
 .product-unavail .button-secondary {
