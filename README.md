@@ -10,7 +10,7 @@ This project is part of the VIX Front End Core Initiative and involves collabora
 
    - Example URL: `https://fakestoreapi.com/products`
 
-2. **Card**: We using card to display products.
+2. **Card**: Product displayed are shown using card, based on the design from Figma.
 
 3. **Navigation**: Users can navigate to the next product by clicking the "Next Product" button.
 
