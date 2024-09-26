@@ -2,7 +2,7 @@
 
 ## Description:
 
-This project is part of the VIX FrontEnd Core Initiative and involves collaboration between the backend and ui/ux teams. This project aims to create a user interface for an e-commerce website that displays items from the men's and women's categories.
+This project is part of the VIX Front End Core Initiative and involves collaboration between the backend and ui/ux teams. This project aims to create a user interface for an e-commerce website that displays items from the men's and women's categories.
 
 ## Features
 
@@ -17,9 +17,9 @@ This project is part of the VIX FrontEnd Core Initiative and involves collaborat
 4. **Spinner**: While waiting for the product to be displayed, the spinner is shown until the product is successfully shown.
 
 5. **Category**: Based on the design from Figma, there's three categories. Below are the categories and example of the UI.
-   -Men's Clothing:
-   ![Men's Clothing](src/assets/images/WebPageMen.png)
-   -Women's Clothing:
-   ![Women's Clothing](src/assets/images/WebPageWomen.png)
-   -Product Unavailable:
-   ![Unavail Section](src/assets/images/WebPageUnavail.png)
+   - Men's Clothing:
+     ![Men's Clothing](src/assets/images/WebPageMen.png)
+   - Women's Clothing:
+     ![Women's Clothing](src/assets/images/WebPageWomen.png)
+   - Product Unavailable:
+     ![Unavail Section](src/assets/images/WebPageUnavail.png)
